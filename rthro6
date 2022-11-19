@@ -532,6 +532,6 @@ closeButton.MouseButton1Click:Connect(function()
 	if c and c.Parent then
 		resReq()
 	end
-	ref()
 	ultimateFling:Destroy()
+	ref()
 end)
