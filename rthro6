@@ -269,6 +269,16 @@ local ws = game:GetService("Workspace")
 local c = nil
 
 local function resReq()
+	local nm = Instance.new("Model")
+	local nh = Instance.new("Humanoid", nm)
+	nh.Health = 100
+	lp.Character = nm
+	nh.Health = 0
+	nh:Destroy()
+	nm:Destroy()
+end
+
+local function ref()
     game.Players.LocalPlayer.Character.Humanoid:Destroy()
     wait(6.8)
     game:service('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(203, 38, 200015, 1, 0, 0, 0, 1, 0, 0, 0, 1)
@@ -520,7 +530,7 @@ end)
 
 closeButton.MouseButton1Click:Connect(function()
 	if c and c.Parent then
-		resReq()
+		ref()
 	end
 	ultimateFling:Destroy()
 end)
