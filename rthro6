@@ -280,7 +280,7 @@ end
 
 local function ref()
     game.Players.LocalPlayer.Character.Humanoid:Destroy()
-    wait(6.8)
+    wait(8)
     game:service('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(203, 38, 200015, 1, 0, 0, 0, 1, 0, 0, 0, 1)
 end
 
